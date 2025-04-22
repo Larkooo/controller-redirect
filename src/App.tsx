@@ -1,9 +1,10 @@
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
-import { useAccount, useConnect, useDisconnect } from "@starknet-react/core";
+import { useConnect, useDisconnect, useAccount } from "@starknet-react/core";
 import { useMemo } from "react";
 import SessionConnector from "@cartridge/connector/session";
+
 function App() {
   const { account } = useAccount();
   const { connectors } = useConnect();
